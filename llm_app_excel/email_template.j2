@@ -1,0 +1,13 @@
+Bonjour {{ Nom }},
+
+Merci d’avoir commandé {{ produit }}.
+Le montant total est de {{ prix }} €.
+
+{% if email %}
+Une confirmation sera envoyée à {{ email }}.
+{% else %}
+Nous n’avons pas d’e-mail enregistré.
+{% endif %}
+
+Cordialement,
+L’équipe
