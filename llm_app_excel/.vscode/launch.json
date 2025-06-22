@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Email Generator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/LLM_excel.py",
+      "console": "integratedTerminal",
+      "args": [
+        "--excel", "clients.xlsx",
+        "--outfolder", "email_to_client",
+        "--template", "email_template.j2",
+        "--templatedir", "./"
+      ]
+    }
+  ]
+}
