@@ -1,13 +1,14 @@
-Bonjour {{ Nom }},
+Bonjour {{ name }} {{ surname }},
 
-Merci d’avoir commandé {{ produit }}.
-Le montant total est de {{ prix }} €.
+Voici votre resume financier associer au numero fiscal : {{ fisc_num }}.
 
 {% if email %}
 Une confirmation sera envoyée à {{ email }}.
 {% else %}
-Nous n’avons pas d’e-mail enregistré.
+Nous n’avons pas d’e-mail enregistré, vous recevrai donc ce mail par voie postal, a l'adresse: {{ address }}.
 {% endif %}
+
+
 
 Cordialement,
 L’équipe
